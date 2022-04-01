@@ -1,0 +1,636 @@
+$text-color: #6326e7;
+$heading: #1e2f65;
+$themebg: black;
+$themecolor: white;
+$bodycolor: #6262e736;
+
+// =============== mixin ==========================
+@mixin profile-img {
+  width: 75px;
+  height: 75px;
+  max-width: 155px;
+  max-height: 155px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border: 7px solid rgba(99, 98, 231, 0.08);
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+
+
+.theme-changer {
+  background: black !important;
+  color: $themecolor;
+  .banner-card{
+    background-color: black;
+  }
+  .accordion-body-timeline{
+    background-color: black;
+  }
+  .accordion-body{
+    background-color: black;
+  }
+  .sidebar{
+    background-color: black;
+  }
+  .accordion-item{
+    background-color: black;
+  }
+  .navbar{
+    background-color: black;
+  }
+  .accordion-button{
+    background-color:black ;
+    h6{
+      color: $themecolor;
+    }
+  }
+  .main-page .navbar{
+    background-color: black !important;
+    .side-bar-btn{
+      color: $themecolor;
+    }
+    .header-icons i{
+      color: $themecolor;
+    }
+     .navbar-brand h4{
+      color: $themecolor !important;
+    }
+  }
+
+  .nav-tab{
+    background-color: black !important;
+    ul li a{
+color: $themecolor;
+h6{
+  color:$themecolor;
+}
+    }
+  }
+  .timeline-middle-item{
+    background-color: black !important;
+    border: 1px solid gray !important;
+  }
+  .chat-massage-1 h5{
+color: $themecolor !important;
+  }
+  .accordion-button h5{
+    color: $themecolor !important;
+  }
+  .photo-card{
+    background-color: black;
+  }
+  .friend-tab-grid{
+
+    overflow: hidden;
+    
+   .friend-tab-card {
+background-color: black;
+border: 1px solid gray;
+margin-bottom: 10px;
+}
+.friend-tab-grid ul li i{
+  color: $themecolor !important;
+}
+  }
+  .banner-card h2{
+    color: $themecolor;
+  }
+  .social-list-icon ul li i{
+    color: $themecolor;
+  }
+  .about-middle-item{
+    background-color: black !important;
+border: 1px solid gray !important;
+  }
+
+}
+
+
+
+.theme-btn:focus {
+  box-shadow: none !important;
+}
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  font-size: 14px;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  /* color: #123bc2; */
+  background-color: $bodycolor;
+}
+
+.sidebar {
+  background-color: white;
+  width: 280px;
+  height: 100vh;
+  position: fixed;
+  .sidebar-logo {
+    padding: 22px 10px 10px 29px;
+  }
+  .sidebar-footer {
+    position: absolute;
+    bottom: 24px;
+  }
+  .accordion a{
+    color: gray;
+    &:hover{
+  color: #0d6efd !important;
+  
+    }
+  }
+  .accordion-button{
+    border-radius: 10px;
+  }
+  .accordion-item{
+    padding: 10px;
+  }
+  .accordion-item{
+    // padding: 0;
+  .accordion-header{
+    .accordion-button{
+      padding: 10px 28px;
+      h6{
+        i{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  }
+}
+.sidebar-1 {
+  display: none;
+}
+.main-page {
+  //  background-color: aqua;
+  //  width: calc(100% - 280px);
+  margin-left: 280px;
+}
+.main-page-js {
+  margin-left: 0px !important;
+}
+
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-item {
+  border: none;
+}
+.dash-search-bar {
+  border-radius: 30px !important;
+  width: 500px;
+  padding-left: 50px;
+  
+}
+.header-search {
+  position: absolute;
+  top: 11px;
+  left: 24px;
+}
+
+.header-icons {
+  i {
+    font-size: 20px;
+    margin: 20px;
+    color: black;
+  }
+}
+.main-page-header-icon {
+  i {
+    font-size: 18px;
+    margin: 5px;
+    color: &$text-color;
+  }
+}
+.navbar-brand-second {
+  h4 {
+    font-size: 25px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+}
+.banner-img {
+  background-image: url(../assets/image/bg-profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  position: relative;
+}
+.banner-card {
+  background-color: $themecolor;
+  padding: 30px;
+  max-width: 380px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  position: absolute;
+  top: 44px;
+  left: 60px;
+
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      background: #6362e714;
+      border-radius: 10px;
+      margin: 10px;
+      font-size: 20px;
+      min-width: 46px;
+      &:hover {
+        background-color: #6326e7;
+      }
+      i {
+        padding: 10px;
+        color: #6326e7;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  .banner-card-profile-img {
+    @include profile-img;
+    // width: 100px;
+    // height: 100px;
+    // max-width: 155px;
+    // max-height: 155px;
+    // border-radius: 50%;
+    // overflow: hidden;
+    // margin-left: auto;
+    // margin-right: auto;
+    // border: 7px solid rgba(99, 98, 231, 0.08);
+    // margin-bottom: 15px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  h2 {
+    font-size: 18px;
+    color: #242934;
+    font-family: Rubik, sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+  }
+}
+
+.nav-tab {
+  .nav-item {
+    h6 {
+      margin: 0;
+    }
+  }
+  .nav-pills {
+    a {
+      display: flex;
+      justify-content: center;
+
+      i {
+        font-size: 20px;
+      }
+      h6 {
+        font-weight: 800;
+        font-size: 15px;
+        margin-left: 10px;
+        color: black;
+      }
+    }
+  }
+}
+.nav-tab-search {
+  width: auto;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: $text-color;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link h6{
+  color: white !important;
+}
+
+.footer-img {
+  position: absolute;
+  bottom: 174px;
+  left: 68px;
+}
+.sidebar-footer-text {
+  padding-bottom: 10px;
+  background-color: #0d6efd !important;
+  border-radius: 26px;
+  margin: 21px;
+}
+
+.my-profile {
+  display: flex;
+
+  .pro-img img {
+    width: 75px;
+    height: 75px;
+    max-width: 155px;
+    max-height: 155px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border: 7px solid rgba(99, 98, 231, 0.08);
+    margin-bottom: 15px;
+  }
+}
+.photo-card {
+  width: 22rem !important;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  .card-body {
+    h5 {
+      font-weight: 600;
+    }
+  }
+}
+.accordion-body-timeline{
+  background-color: #f7f7fe;
+  .btn{
+    padding: 5px 53px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .btn-view{
+    background-color: #f4f6fd !important;
+  
+    border: 1px solid palegoldenrod;
+  }
+
+  .like-icon{
+    .heart-icon{
+      color: red;
+      font-size: 20px;
+      margin-right: 5px;
+    }
+    
+  }
+}
+
+// ======================photos=======================================
+
+
+// ================ timelime middle section============================================
+.timeline-middle-item{
+  // display: flex;
+  padding: 20px;
+
+  .middle-profile-img{
+    display: flex;
+  img{
+    @include profile-img;
+  }
+  
+  }
+  .middle-profile-text{
+    p{
+      color:gray;
+    }
+  }
+  .timeline-chat-box{
+    .chat-box-profile-img{
+      img{
+        @include profile-img;
+      }
+    }
+    
+
+  }
+  .chat-massage-1{
+    margin-left: 10px;
+    border: 1px solid rgba(175, 170, 170, 0.26);
+    padding: 20px;
+    h5{
+      font-weight: 600;
+      color: #1d0849;
+    }
+    p{
+      color: gray;
+    }
+  }
+  .border-none{
+    border: none;
+    button {
+      background-color:$text-color !important ;
+      i{
+      color: yellow;
+      }
+    }
+  }
+  
+}
+.accordion-body-timeline-info{
+
+
+.my-profile-info{
+  display: flex;
+  flex-direction: column;
+  h6{
+font-size: 12px;
+  }
+  P{
+    color: gray;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+button{
+  width: 100%;
+}
+.btn-facebook{
+  background-color: #50598e;color:white;
+}
+.btn-twitter{
+  background-color: #6fa2d8;color:white;
+}
+.btn-telegram{
+  background-color: #c64e40;color:white;
+}
+}
+.profile-info-followers{
+  .pro-text{
+    h6{
+      font-weight: 600;
+
+    }
+    p{
+      color: gray;
+      &:hover{
+        color: #0d6efd;
+      }
+
+    }
+  }
+
+}
+.profile-info-photos{
+
+  .col-lg-3{
+    padding: 2px;
+
+    img{
+  width: 73px;
+  height: 60px;
+  object-fit: cover;
+    }
+  }
+
+}
+
+
+
+
+// =============================== .friend-tab-card ============================================
+
+
+
+
+
+.profile-info-friend{
+  img{
+    width: 73px;
+    height: 73px !important;
+    border-radius: 50px;
+  }
+}
+.friend-tab-grid{
+  border-radius: 20px;
+  position: relative;
+
+  .friend-tab-card{
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  //  position: relative;
+  padding-top: 82px;
+    
+    img{
+      
+      @include profile-img;
+      width: 175px !important;
+      height: 175px !important;
+      position: absolute;
+      top: 218px;
+    right: 157px;
+    }
+   
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      background: #6362e714;
+      border-radius: 10px;
+      margin: 10px;
+      font-size: 20px;
+      min-width: 46px;
+      &:hover {
+        background-color: #6326e7;
+      }
+      i {
+        padding: 10px;
+        color: black;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  .friend-tab-card-item{
+    h2{
+      color: #5a1fd8 !important;
+    }
+  }
+
+}
+.setting-icon{
+  background-color: #f4f4f4;
+font-size: 20px;
+  color: rgb(161, 142, 142);
+  position: fixed;
+  right: 21px;
+  top: 50%;
+  z-index: 9999 !important;
+  transform: translate(0, -50%);
+  // width: 100;
+  // height: 100px;
+  border-radius: 10px;
+  i{
+    padding: 14px;
+  }
+ 
+}
+.moving-top{
+  width: 44px;
+  height: 44px;
+  background-color:#6362e7;
+  font-size: 20px;
+    color: rgb(161, 142, 142);
+    position: fixed;
+    right: 21px;
+    bottom: 0%;
+  
+    transform: translate(0, -50%);
+    // width: 100;
+    // height: 100px;
+    border-radius: 50px;
+    i{
+      padding: 12px;
+      color: white;
+    }
+
+}
+.about-middle-item{
+  padding: 30px;
+  .middle-about-img{
+    display: flex;
+    img{
+      width: 60px ;
+      height: 60px;
+      border-radius: 50px;
+      object-fit: cover;
+    }
+    h6{
+      font-size: 13px;
+    }
+    .add-frnd{
+      padding: 0.05rem 0.4rem;
+      font-size: 11px;
+      background-color: #6326e7;
+      box-shadow: none;
+    }
+  }
+}
+.hover-effect{
+  display: none;
+  width: 300px;
+  position: absolute;
+  right: 68px;
+  z-index: 9999;
+  top: 66px;
+}

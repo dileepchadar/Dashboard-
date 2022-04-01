@@ -1,0 +1,2521 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+         integrity="sha512-Oy+sz5W86PK0ZIkawrG0iv7XwWhYecM3exvUtMKNJMekGFJtVAhibhRPTpmyTj8+lJCkmWfnpxKgT2OopquBHA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Dashboard!</title>
+   </head>
+   <body class="body">
+      <!-- <section class="hover-effect">
+         <ul class="">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+      </section> -->
+
+      <div class="dashboard">
+         <!-- <h1>sidebar</h1> -->
+         <div class="sidebar " id="sidebar">
+            <div class="d-flex justify-content-center flex-column">
+               <div class="sidebar-logo">
+                  <a href=""><img src="assets/image/small-logo.png" alt="" /></a>
+               </div>
+               <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                           aria-expanded="true" aria-controls="collapseOne">
+                           <span>
+                              <h6><i class="fa fa-dashcube" aria-hidden="true"></i>  Dashboard</h6>
+                           </span>
+                        </button>
+                     </h2>
+                     <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-minus" aria-hidden="true"></i>
+                                     <span class="ms-3">default</span></a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-minus" aria-hidden="true"></i>
+                                    <span class="ms-3">default</span></a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-minus" aria-hidden="true"></i>
+                                    <span class="ms-3">default</span></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           <span>
+                              <h6><i class="fa fa-snowflake-o" aria-hidden="true"></i> Widgets</h6>
+                           </span>
+                        </button>
+                     </h2>
+                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-minus" aria-hidden="true"></i>
+                                    <span class="ms-3">default</span></a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-minus" aria-hidden="true"></i>
+                                    <span class="ms-3">default</span></a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-minus" aria-hidden="true"></i>
+                                    <span class="ms-3">default</span></a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                   <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           <span>
+                              <h6><i class="fa fa-lastfm-square" aria-hidden="true"></i> Page layout</h6>
+                           </span>
+                        </button>
+                     </h2>
+                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#">default</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">E-commerce</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Crypto</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div> 
+
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingfour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseProject" aria-expanded="false" aria-controls="collapseProject">
+                           <span>
+                              <h6><i class="fa fa-tasks" aria-hidden="true"></i> <i class="fa fa-file-o" aria-hidden="true"></i>
+                                 Project</h6>
+                           </span>
+                        </button>
+                     </h2>
+                     <div id="collapseProject" class="accordion-collapse collapse" aria-labelledby="headingProject"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#">default</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">E-commerce</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Crypto</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div> 
+
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingfive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseFile-manager" aria-expanded="false" aria-controls="collapseFile-manager">
+                           <span>
+                              <h6> <i class="fa fa-file-o" aria-hidden="true"></i>
+                                 File manager</h6>
+                           </span>
+                        </button>
+                     </h2>
+                     <div id="collapseFile-manager" class="accordion-collapse collapse" aria-labelledby="headingProject"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#">default</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">E-commerce</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Crypto</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div> 
+
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingfour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseKanban-Board" aria-expanded="false" aria-controls="collapseKanban-Board">
+                           <span>
+                              <h6><i class="fa fa-ship" aria-hidden="true"></i> Kanban Board</h6>
+                           </span>
+                        </button>
+                     </h2>
+                     <div id="collapseKanban-Board" class="accordion-collapse collapse" aria-labelledby="headingKanban-Board"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#">default</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">E-commerce</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Crypto</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div> 
+
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingEmail">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseEmail" aria-expanded="false" aria-controls="collapseKanban-Board">
+                           <span>
+                              <h6><i class="fa fa-ship" aria-hidden="true"></i> Email</h6>
+                           </span>
+                        </button>
+                     </h2>
+                     <div id="collapseEmail" class="accordion-collapse collapse" aria-labelledby="headingKanban-Board"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#">default</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">E-commerce</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Crypto</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div> 
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingfour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseKanban-Board" aria-expanded="false" aria-controls="collapseKanban-Board">
+                           <span>
+                              <h6><i class="fa fa-commenting-o" aria-hidden="true"></i>Chat</h6>
+                           </span>
+                        </button>
+                     </h2>
+                     <div id="collapseKanban-Board" class="accordion-collapse collapse" aria-labelledby="headingKanban-Board"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <ul class="nav flex-column">
+                              <li class="nav-item">
+                                 <a class="nav-link active" aria-current="page" href="#">default</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">E-commerce</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#">Crypto</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div> 
+               </div>
+
+
+
+<div class="setting-icon ">
+   <div class="d-flex flex-column  justify-content-center align-item-center">
+      <div class="d-flex flex-column  justify-content-center align-item-center">
+         <i class="bi bi-gear"></i>
+         <i class="bi bi-archive"></i>
+      </div>
+      <!-- <div>
+         <i class="bi bi-archive"></i>
+      </div> -->
+      
+   </div>
+
+</div>
+
+<div class=" moving-top ">
+   <div class="d-flex flex-column  justify-content-center align-item-center">
+      <div class="">
+         <i class="bi bi-chevron-double-up d-flex flex-column  justify-content-center align-item-center"></i>
+      
+      </div>
+      <!-- <div>
+         <i class="bi bi-archive"></i>
+      </div> -->
+      
+   </div>
+
+</div>
+
+
+
+               <div class="footer sidebar-footer ">
+                  <div class="footer-img text-center">
+                     <img src="assets/image/side-bar.png" alt="side-barfooter-img" />
+                  </div>
+                  <div class="text-center bg-primary text-light pt-5 sidebar-footer-text">
+                     <h5>Need help</h5>
+                     <a href="" class="text-light">
+                        <p class="px-4">
+                           Lorem ipsum dolor, sit amet consectetur adipisicing.
+                        </p>
+                     </a>
+                     <button class="btn btn-danger">Buy Now</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- <h1>main -page</h1> -->
+      <section class="main-page-2">
+         <div class="main-page">
+         <nav class="navbar navbar-main-page navbar-expand-lg navbar-light bg-light">
+            <button class="btn side-bar-btn ms-1">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="container-fluid">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <form class="d-flex position-relative">
+                     <i class="fa fa-search header-search" aria-hidden="true"></i>
+                     <input class="form-control me-2 dash-search-bar" type="search" placeholder="    Search"
+                        aria-label="Search" />
+                  </form>
+                  <div class="ms-auto header-icons">
+                     <button class="btn theme-btn p-0"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
+                     <!-- <a href=""> <i class="fa fa-moon-o" aria-hidden="true"></i></a> -->
+                     <a href="" class="cart-plus"> <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                     <a href=""> <i class="fa fa-bookmark" aria-hidden="true"></i></a>
+                     <a href=""> <i class="fa fa-bell-o" aria-hidden="true"></i></a>
+                     <a href="">
+                     <i class="fa fa-user" aria-hidden="true"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+         <div class="px-3">
+            <nav class="navbar navbar-expand-lg navbar-light">
+               <div class="container-fluid">
+                  <a class="navbar-brand navbar-brand-second" href="#">
+                     <h4>Social App</h4>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="main-page-header-icon ms-auto">
+                     <i class="fa fa-home" aria-hidden="true">
+                     Apps / Social App</i>
+                  </div>
+               </div>
+            </nav>
+            <!-- ==================banner============================== -->
+            <section class="banner">
+               <div class="banner-img">
+                  <div class="text-center banner-card">
+                     <div class=" banner-card-profile-img">
+                        <img src="assets/image/7.jpg" alt="">
+                     </div>
+                     <h4 class="fw-bold">Emay Walter</h4>
+                     <p>DESIGNER</p>
+                     <div class="social-media">
+                        <div class="social-list-icon">
+                           <ul class="d-flex justify-content-center">
+                              <li><a href="">
+                                 <i class="fa fa-facebook" aria-hidden="true"></i>
+                                 </a>
+                              </li>
+                              <li><a href="">
+                                 <i class="fa fa-google" aria-hidden="true"></i>
+                                 </a>
+                              </li>
+                              <li><a href="">
+                                 <i class="fa fa-twitter" aria-hidden="true"></i>
+                                 </a>
+                              </li>
+                              <li><a href="">
+                                 <i class="fa fa-instagram" aria-hidden="true"></i>
+                                 </a>
+                              </li>
+                              <li><a href="">
+                                 <i class="fa fa-wifi" aria-hidden="true"></i>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="container  border-top">
+                        <div class="row">
+                           <div class="col border-end">
+                              <div class="bann-pro-text">
+                                 <h2 class="m-0">575</h2>
+                                 <p>follower</p>
+                              </div>
+                           </div>
+                           <div class="col border-end">
+                              <div class="bann-pro-text">
+                                 <h2 class="m-0">375</h2>
+                                 <p>following</p>
+                              </div>
+                           </div>
+                           <div class="col">
+                              <div class="bann-pro-text">
+                                 <h2 class="m-0">705</h2>
+                                 <p>Like</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="setting-icon ">
+                  <div class="d-flex flex-column  justify-content-center align-item-center">
+                     <div class="d-flex flex-column  justify-content-center align-item-center">
+                        <i class="bi bi-gear"></i>
+                        <i class="bi bi-archive"></i>
+                     </div>
+                     <!-- <div>
+                        <i class="bi bi-archive"></i>
+                     </div> -->
+                     
+                  </div>
+               
+               </div>
+            </section>
+            <!-- =======================nav-tab================================ -->
+            <section class="nav-tab mt-5 bg-light p-3 rounded-3">
+               <div class="container-fluid">
+                  <div class="row justify-content-center align-items-center">
+                     <div class="col-lg-5">
+                        <div class="container mt-3">
+                           <!-- Nav pills -->
+                           <ul class="nav nav-pills  theme-btn" role="tablist">
+                              <li class="nav-item">
+                                 <a class="nav-link active" data-bs-toggle="pill" href="#Timeline">
+                                    <i class="fa fa-clock-o"
+                                       aria-hidden="true"></i>
+                                    <h6 > Timeline </h6>
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" data-bs-toggle="pill" href="#About">
+                                    <i class="fa fa-user"
+                                       aria-hidden="true"></i>
+                                    <h6> About </h6>
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" data-bs-toggle="pill" href="#Friend">
+                                    <i class="fa fa-users"
+                                       aria-hidden="true"></i>
+                                    <h6> Friends </h6>
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" data-bs-toggle="pill" href="#photos">
+                                    <i class="fa fa-users"
+                                       aria-hidden="true"></i>
+                                    <h6> photos </h6>
+                                 </a>
+                              </li>
+                           </ul>
+                           <!-- Tab panes -->
+                        </div>
+                     </div>
+                     <div class="col-lg-7">
+                        <div>
+                           <form class="d-flex justify-content-end">
+                              <input class="form-control nav-tab-search" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"
+                                 aria-hidden="true"></i></button>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <div class="tab-content">
+               <!-- ===============timeline tab============================ -->
+               <div id="Timeline" class="container-fluid tab-pane active">
+                  <br>
+                  <h3>Timeline</h3>
+                  <div class="container-fluid">
+                     <div class="row">
+                        <div class="col-lg-3">
+                           <div class="accordion" id="accordionExample-timeline">
+                              <div class="accordion-item">
+                                 <h2 class="accordion-header" id="headingOne-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#collapseOne-1" aria-expanded="true" aria-controls="collapseOne-1">
+                                    Profile
+                                    </button>
+                                 </h2>
+                                 <div id="collapseOne-1" class="accordion-collapse collapse show" aria-labelledby="headingOne-1"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body accordion-body-timeline">
+                                       <div class="my-profile">
+                                          <div class="pro-img banner-card-profile-img">
+                                             <img src="assets/image/7.jpg" alt="">
+                                          </div>
+                                          <div class="pro-text ms-3 mt-3">
+                                             <h6 class="p-0">My page</h6>
+                                             <p class="m-0">massage</p>
+                                             <p>Notification</p>
+                                          </div>
+                                       </div>
+                                       <div class="text-center">
+                                          <button type="button" class="btn btn-primary like-btn">Likes</button>
+                                          <button type="button" class="btn btn-view">View</button>
+                                       </div>
+                                       <div class="like-icon text-center d-flex justify-content-center">
+                                          <i class="bi bi-heart-fill heart-icon"></i>
+                                          <h4>466</h4>
+                                       </div>
+                                       <p class="text-center">35 New Likes This Week</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="timeline-banner my-3 ">
+                              <img src="assets/image/timeline-3.png" class="img-fluid" alt="">
+                           </div>
+                           <!-- =======================time-line second accordion-mutual-friend feed============================================= -->
+                           <section>
+                              <div class="accordion" id="accordionExample-timeline">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingtwo-2">
+                                       <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapsetwo-2" aria-expanded="true" aria-controls="collapsetwo-2">
+                                          <h5>Mutual Friends</h5>
+                                       </button>
+                                    </h2>
+                                    <div id="collapsetwo-2" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                                       data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                          <div class="mutual-friend-data">
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="m-0">My page</h6>
+                                                   <p class="m-0">massage@gmail.com</p>
+                                                </div>
+                                             </div>
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="m-0">My page</h6>
+                                                   <p class="m-0">massage@gmail.com</p>
+                                                </div>
+                                             </div>
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="m-0">My page</h6>
+                                                   <p class="m-0">massage@gmail.com</p>
+                                                </div>
+                                             </div>
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="m-0">My page</h6>
+                                                   <p class="m-0">massage@gmail.com</p>
+                                                </div>
+                                             </div>
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="m-0">My page</h6>
+                                                   <p class="m-0">massage@gmail.com</p>
+                                                </div>
+                                             </div>
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="m-0">My page</h6>
+                                                   <p class="m-0">massage@gmail.com</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                           </section>
+                           <!-- ===========================accordion activity======================================= -->
+                           <section class="mt-3">
+                           <div class="accordion" id="accordionExample-timeline">
+                           <div class="accordion-item">
+                           <h2 class="accordion-header" id="headingtwo-Activity">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapsetwo-Activity" aria-expanded="true" aria-controls="collapsetwo-Activity">
+                           <h5>Activity</h5>
+                           </button>
+                           </h2>
+                           <div id="collapsetwo-Activity" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                              data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                           <div class="mutual-friend-data">
+                           <div class="my-profile mutual-friend-img">
+                           <div class="pro-img banner-card-profile-img">
+                           <img src="assets/image/7.jpg" alt="">
+                           </div>
+                           <div class="pro-text ms-3 mt-3">
+                           <h6 class="m-0">My page</h6>
+                           <p class="m-0">massage@gmail.com</p>
+                           </div>
+                           </div>
+                           <div class="my-profile mutual-friend-img">
+                           <div class="pro-img banner-card-profile-img">
+                           <img src="assets/image/7.jpg" alt="">
+                           </div>
+                           <div class="pro-text ms-3 mt-3">
+                           <h6 class="m-0">My page</h6>
+                           <p class="m-0">massage@gmail.com</p>
+                           </div>
+                           </div>
+                           <div class="my-profile mutual-friend-img">
+                           <div class="pro-img banner-card-profile-img">
+                           <img src="assets/image/7.jpg" alt="">
+                           </div>
+                           <div class="pro-text ms-3 mt-3">
+                           <h6 class="m-0">My page</h6>
+                           <p class="m-0">massage@gmail.com</p>
+                           </div>
+                           </div>
+                           <div class="my-profile mutual-friend-img">
+                           <div class="pro-img banner-card-profile-img">
+                           <img src="assets/image/7.jpg" alt="">
+                           </div>
+                           <div class="pro-text ms-3 mt-3">
+                           <h6 class="m-0">My page</h6>
+                           <p class="m-0">massage@gmail.com</p>
+                           </div>
+                           </div>
+                           <div class="my-profile mutual-friend-img">
+                           <div class="pro-img banner-card-profile-img">
+                           <img src="assets/image/7.jpg" alt="">
+                           </div>
+                           <div class="pro-text ms-3 mt-3">
+                           <h6 class="m-0">My page</h6>
+                           <p class="m-0">massage@gmail.com</p>
+                           </div>
+                           </div>
+                           <div class="my-profile mutual-friend-img">
+                           <div class="pro-img banner-card-profile-img">
+                           <img src="assets/image/7.jpg" alt="">
+                           </div>
+                           <div class="pro-text ms-3 mt-3">
+                           <h6 class="m-0">My page</h6>
+                           <p class="m-0">massage@gmail.com</p>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                           </section>
+                           </div>
+
+                           
+                           <div class="col-lg-6">
+                           <div class="timeline-middle-item bg-light border border-5">
+                           <div class="middle-profile-img mt-3 ">
+                           <div>
+                           <img src="assets/image/timeline-3.png" alt="">
+                           </div>
+                           <div class="mt-3 ms-2">
+                           <h5 class=" mb-0">ELENA</h5>
+                           <p>January, 12,2019</p>
+                           </div>
+                           <div class="ms-auto me-4 mt-3 ">
+                           <h4>    <i class="bi bi-three-dots-vertical"></i>
+                           </h4>   </div>
+                           </div>
+                           <div>
+                           <img src="assets/image/timeline-3.png" class="img-fluid " alt="">
+                           </div>
+                           <div class="middle-profile-text mt-3">
+                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid libero voluptate sequi iusto obcaecati natus placeat distinctio est tempora sed.</p>
+                           </div>
+                           <div class="middle-profile-like-share d-flex">
+                           <div><i class="fa fa-heart text-danger fs-2"></i></div>
+                           <div class="ms-auto d-flex">
+                           <h4>10 <i class="bi bi-chat-dots fs-5"></i></h4>
+                           <h4 class="ms-2">12  <i class="bi bi-share fs-5"></i></h4>
+                           </div>
+                           </div>
+
+                           <div class="timeline-chat-box">
+                           <div class="d-flex">
+                           <div class="chat-box-profile-img">
+                           <img src="assets/image/friend-profile.jpg" alt="">
+                           </div>
+                           <div class="chat-massage-1">
+                           <h5>dileep</h5>
+                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, laboriosam. fugiat.</p>
+                           </div>
+                           </div>
+                           </div>
+                           <div class="timeline-chat-box ms-5 mt-3">
+                           <div class="d-flex">
+                           <div class="chat-box-profile-img">
+                           <img src="assets/image/friend-profile.jpg" alt="">
+                           </div>
+                           <div class="chat-massage-1">
+                           <h5>dileep</h5>
+                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, laboriosam. fugiat.</p>
+                           </div>
+                           </div>
+                           </div>
+                           <div class="timeline-chat-box ms-5 mt-3">
+                           <div class="d-flex">
+                           <div class="chat-box-profile-img">
+                           <img src="assets/image/timeline-1.png" alt="">
+                           </div>
+                           <div class="chat-massage-1">
+                           <h5>dileep</h5>
+                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, laboriosam. fugiat.</p>
+                           </div>
+                           </div>
+                           </div>
+                           <div class="timeline-chat-box mt-3">
+                           <div class="d-flex">
+                           <div class="chat-box-profile-img">
+                           <img src="assets/image/timeline-2.png" alt="">
+                           </div>
+                           <div class="chat-massage-1">
+                           <h5>dileep</h5>
+                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, laboriosam. fugiat.</p>
+                           </div>
+                           </div>
+                           </div>
+                           <div class="timeline-chat-box-commit text-center pt-3">
+                           <h5 class="text-primary">More comments</h5>
+                           </div>
+                           <div class="timeline-chat-box ">
+                              <div class="d-flex">
+                              <div class="chat-box-profile-img">
+                              <img src="assets/image/friend-profile.jpg" alt="">
+                              </div>
+                              <div class="chat-massage-1 border-none w-100">
+                              
+                                 <form class="d-flex">
+                                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit"> <i class="bi bi-emoji-smile-fill"></i></button>
+                                  </form>
+                              </div>
+                              </div>
+                              </div>
+
+                           
+                           </div>
+                           <div class="timeline-middle-item bg-light border border-5">
+                              <div class="middle-profile-img mt-3 ">
+                              <div>
+                              <img src="assets/image/timeline-3.png" alt="">
+                              </div>
+                              <div class="mt-3 ms-2">
+                              <h5 class=" mb-0">ELENA</h5>
+                              <p>January, 12,2019</p>
+                              </div>
+                              <div class="ms-auto me-4 mt-3 ">
+                              <h4>    <i class="bi bi-three-dots-vertical"></i>
+                              </h4>   </div>
+                              </div>
+                              <div>
+                              <img src="assets/image/timeline-2.png" class="img-fluid " alt="">
+                              </div>
+                              <div class="middle-profile-text mt-3">
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid libero voluptate sequi iusto obcaecati natus placeat distinctio est tempora sed.</p>
+                              </div>
+                              <div class="middle-profile-like-share d-flex">
+                              <div><i class="fa fa-heart text-danger fs-2"></i></div>
+                              <div class="ms-auto d-flex">
+                              <h4>10 <i class="bi bi-chat-dots fs-5"></i></h4>
+                              <h4 class="ms-2">12  <i class="bi bi-share fs-5"></i></h4>
+                              </div>
+                              </div>
+   
+                              <div class="timeline-chat-box">
+                              <div class="d-flex">
+                              <div class="chat-box-profile-img">
+                              <img src="assets/image/friend-profile.jpg" alt="">
+                              </div>
+                              <div class="chat-massage-1">
+                              <h5>Dileep</h5>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, laboriosam. fugiat.</p>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="timeline-chat-box ms-5 mt-3">
+                              <div class="d-flex">
+                              <div class="chat-box-profile-img">
+                              <img src="assets/image/friend-profile.jpg" alt="">
+                              </div>
+                              <div class="chat-massage-1">
+                              <h5>Borne</h5>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, laboriosam. fugiat.</p>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="timeline-chat-box ms-5 mt-3">
+                              <div class="d-flex">
+                              <div class="chat-box-profile-img">
+                              <img src="assets/image/timeline-1.png" alt="">
+                              </div>
+                              <div class="chat-massage-1">
+                              <h5>joson</h5>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, laboriosam. fugiat.</p>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="timeline-chat-box mt-3">
+                              <div class="d-flex">
+                              <div class="chat-box-profile-img">
+                              <img src="assets/image/timeline-1.png" alt="">
+                              </div>
+                              <div class="chat-massage-1">
+                              <h5>joson</h5>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, laboriosam. fugiat.</p>
+                              </div>
+                              </div>
+                              </div>
+                              <div class="timeline-chat-box-commit text-center pt-3">
+                              <h5 class="text-primary">More comments</h5>
+                              </div>
+                              <div class="timeline-chat-box ">
+                                 <div class="d-flex">
+                                 <div class="chat-box-profile-img">
+                                 <img src="assets/image/friend-profile.jpg" alt="">
+                                 </div>
+                                 <div class="chat-massage-1 border-none w-100">
+                                 
+                                    <form class="d-flex">
+                                       <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                       <button class="btn btn-outline-success" type="submit"> <i class="bi bi-emoji-smile-fill"></i></button>
+                                     </form>
+                                 </div>
+                                 </div>
+                                 </div>
+   
+                              
+                              </div>
+                           </div>
+
+                           <div class="col-lg-3">
+
+                                <!-- ===========================accordion profile-info======================================= -->
+<section>
+                           <div class="accordion" id="accordionExample-profile-info">
+                           <div class="accordion-item">
+                           <h2 class="accordion-header" id="headingOne-profile-info">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne-profile-info" aria-expanded="true" aria-controls="collapseOne-profile-info">
+                           Profile info
+                           </button>
+                           </h2>
+                           <div id="collapseOne-profile-info" class="accordion-collapse collapse show" aria-labelledby="headingOne-1"
+                              data-bs-parent="#accordionExample">
+                           <div class="accordion-body accordion-body-timeline accordion-body-timeline-info">
+                           <div class="my-profile my-profile-info">
+                         
+                           <div class="pro-text ms-3 mt-3">
+                           <h6 class="p-0 fw-bold">About me</h6>
+                           <p>Lorem ipsum dolor sit amet consecteturaut mol Lorem ipsum dolor sit amet consectetur adipisicing elit. architecto.</p>
+                           </div>
+                           <div class="pro-text ms-3">
+                              <h6 class="p-0 fw-bold">About me</h6>
+                              <p>Lorem ipsum dolor sit amet consecteturaut mol Lorem ipsum dolor sit amet consectetur adipisicing elit. architecto.</p>
+                              </div>
+                              <div class="pro-text ms-3 ">
+                                 <h6 class="p-0 fw-bold">About me</h6>
+                                 <p>Lorem ipsum dolor sit amet consecteturaut mol Lorem ipsum dolor sit amet consectetur adipisicing elit. architecto.</p>
+                                 </div>
+                           </div>
+                           <div class="text-center">
+                              <button type="button" class="btn btn-facebook"><i class="bi bi-facebook"></i> Facebook</button>
+                              <button type="button" class="btn btn-twitter"><i class="bi bi-twitter"></i> Twitter</button>
+                           
+                              <button type="button" class="btn btn-telegram"><i class="bi bi-telegram"></i> Telegram</button>
+                           </div>
+                           
+                          
+                           </div>
+                           </div>
+                           </div>
+                           </div>
+                        </section>
+        <!-- =========================== profile info follower accordion  ===================================== -->
+
+ <section class="mt-3">
+                              <div class="accordion" id="accordionExample-timeline">
+                                 <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingtwo-follower">
+                                       <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapsetwo-follower" aria-expanded="true" aria-controls="collapsetwo-follower">
+                                          <h5>Follower</h5>
+                                       </button>
+                                    </h2>
+                                    <div id="collapsetwo-follower" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                                       data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                          <div class="mutual-friend-data profile-info-followers">
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="">My page</h6>
+                                                   <p class="m-0">Add Friend</p>
+                                                </div>
+                                             </div>
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="">My page</h6>
+                                                   <p class="m-0">Add Friend</p>
+                                                </div>
+                                             </div>
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="">My page</h6>
+                                                   <p class="m-0">Add Friend</p>
+                                                </div>
+                                             </div>
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="">My page</h6>
+                                                   <p class="m-0">Add Friend</p>
+                                                </div>
+                                             </div>
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="">My page</h6>
+                                                   <p class="m-0">Add Friend</p>
+                                                </div>
+                                             </div>
+                                             <div class="my-profile mutual-friend-img">
+                                                <div class="pro-img banner-card-profile-img">
+                                                   <img src="assets/image/7.jpg" alt="">
+                                                </div>
+                                                <div class="pro-text ms-3 mt-3">
+                                                   <h6 class="">My page</h6>
+                                                   <p class="m-0">Add Friend</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                           </section>
+
+         <!-- =========================== profile info following accordion  ===================================== -->                  
+
+
+         <section class="mt-3">
+            <div class="accordion" id="accordionExample-timeline">
+               <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingtwo-following">
+                     <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsetwo-following" aria-expanded="true" aria-controls="collapsetwo-following">
+                        <h5>Following</h5>
+                     </button>
+                  </h2>
+                  <div id="collapsetwo-following" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                     data-bs-parent="#accordionExample">
+                     <div class="accordion-body">
+                        <div class="mutual-friend-data profile-info-followers">
+                           <div class="my-profile mutual-friend-img">
+                              <div class="pro-img banner-card-profile-img">
+                                 <img src="assets/image/7.jpg" alt="">
+                              </div>
+                              <div class="pro-text ms-3 mt-3">
+                                 <h6 class="">My page</h6>
+                                 <p class="m-0">Add Friend</p>
+                              </div>
+                           </div>
+                           <div class="my-profile mutual-friend-img">
+                              <div class="pro-img banner-card-profile-img">
+                                 <img src="assets/image/7.jpg" alt="">
+                              </div>
+                              <div class="pro-text ms-3 mt-3">
+                                 <h6 class="">My page</h6>
+                                 <p class="m-0">Add Friend</p>
+                              </div>
+                           </div>
+                           <div class="my-profile mutual-friend-img">
+                              <div class="pro-img banner-card-profile-img">
+                                 <img src="assets/image/7.jpg" alt="">
+                              </div>
+                              <div class="pro-text ms-3 mt-3">
+                                 <h6 class="">My page</h6>
+                                 <p class="m-0">Add Friend</p>
+                              </div>
+                           </div>
+                           <div class="my-profile mutual-friend-img">
+                              <div class="pro-img banner-card-profile-img">
+                                 <img src="assets/image/7.jpg" alt="">
+                              </div>
+                              <div class="pro-text ms-3 mt-3">
+                                 <h6 class="">My page</h6>
+                                 <p class="m-0">Add Friend</p>
+                              </div>
+                           </div>
+                           <div class="my-profile mutual-friend-img">
+                              <div class="pro-img banner-card-profile-img">
+                                 <img src="assets/image/7.jpg" alt="">
+                              </div>
+                              <div class="pro-text ms-3 mt-3">
+                                 <h6 class="">My page</h6>
+                                 <p class="m-0">Add Friend</p>
+                              </div>
+                           </div>
+                           <div class="my-profile mutual-friend-img">
+                              <div class="pro-img banner-card-profile-img">
+                                 <img src="assets/image/7.jpg" alt="">
+                              </div>
+                              <div class="pro-text ms-3 mt-3">
+                                 <h6 class="">My page</h6>
+                                 <p class="m-0">Add Friend</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </section>
+            <!-- =========================== profile info latest-photos accordion  ===================================== -->   
+
+            <section class="mt-3">
+               <div class="accordion" id="accordionExample-latest-photos">
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingtwo-latest-photos">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapsetwo-latest-photos" aria-expanded="true" aria-controls="collapsetwo-latest-photos">
+                           <h5>Latest photos</h5>
+                        </button>
+                     </h2>
+                     <div id="collapsetwo-latest-photos" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <div class="mutual-friend-data profile-info-photos">
+                              <div class="my-profile mutual-friend-img">
+                                 <div class="container">
+                                    <div class="row">
+                                      <div class="col-lg-3">
+                                        <div>
+                                           <img src="assets/image/timeline-2.png" class="img-fluid" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-3">
+                                       <div>
+                                          <img src="assets/image/timeline-1.png" class="img-fluid" alt="">
+                                       </div>
+                                     </div>
+                                     <div class="col-lg-3">
+                                       <div>
+                                          <img src="assets/image/timeline-3.png" class="img-fluid" alt="">
+                                       </div>
+                                     </div>
+                                     <div class="col-lg-3">
+                                       <div>
+                                          <img src="assets/image/friend-profile.jpg" class="img-fluid" alt="">
+                                       </div>
+                                     </div>
+                              
+                                    
+                                       <div class="col-lg-3">
+                                         <div>
+                                            <img src="assets/image/timeline-2.png" class="img-fluid" alt="">
+                                         </div>
+                                       </div>
+                                       <div class="col-lg-3">
+                                        <div>
+                                           <img src="assets/image/timeline-1.png" class="img-fluid" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-3">
+                                        <div>
+                                           <img src="assets/image/timeline-3.png" class="img-fluid" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-3">
+                                        <div>
+                                           <img src="assets/image/friend-profile.jpg" class="img-fluid" alt="">
+                                        </div>
+                                      </div>
+                                    
+                                  </div>
+                                 
+                              </div>
+                             
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+            </section>
+            <!-- =========================== profile-info-friend accordion  ===================================== -->   
+
+            <section class="mt-3">
+               <div class="accordion" id="accordionExample-latest-photos">
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingtwo-latest-photos">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapsetwo-latest-photos" aria-expanded="true" aria-controls="collapsetwo-latest-photos">
+                           <h5>Latest photos</h5>
+                        </button>
+                     </h2>
+                     <div id="collapsetwo-latest-photos" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <div class="mutual-friend-data profile-info-photos profile-info-friend">
+                              <div class="my-profile mutual-friend-img">
+                                 <div class="container">
+                                    <div class="row">
+                                      <div class="col-lg-3">
+                                        <div>
+                                           <img src="assets/image/timeline-2.png" class="img-fluid" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-3">
+                                       <div>
+                                          <img src="assets/image/timeline-1.png" class="img-fluid" alt="">
+                                       </div>
+                                     </div>
+                                     <div class="col-lg-3">
+                                       <div>
+                                          <img src="assets/image/timeline-3.png" class="img-fluid" alt="">
+                                       </div>
+                                     </div>
+                                     <div class="col-lg-3">
+                                       <div>
+                                          <img src="assets/image/friend-profile.jpg" class="img-fluid" alt="">
+                                       </div>
+                                     </div>
+                              
+                                    
+                                       <div class="col-lg-3">
+                                         <div>
+                                            <img src="assets/image/timeline-2.png" class="img-fluid" alt="">
+                                         </div>
+                                       </div>
+                                       <div class="col-lg-3">
+                                        <div>
+                                           <img src="assets/image/timeline-1.png" class="img-fluid" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-3">
+                                        <div>
+                                           <img src="assets/image/timeline-3.png" class="img-fluid" alt="">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-3">
+                                        <div>
+                                           <img src="assets/image/friend-profile.jpg" class="img-fluid" alt="">
+                                        </div>
+                                      </div>
+                                    
+                                  </div>
+                                 
+                              </div>
+                             
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+            </section>
+            <div class="mt-3">
+               <img src="assets/image/timeline-4-info.png" class="img-fluid" alt="">
+            </div>
+
+
+                           </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+
+                        <!-- ===============about tab============================ -->
+                        <div id="About" class="container-fluid tab-pane fade">
+                           <div id="Timeline" class="container-fluid tab-pane active">
+                              <br>
+                              <h3></h3>
+                              <div class="container-fluid">
+                                 <div class="row">
+                                    <div class="col-lg-3">
+                                       <div class="accordion" id="accordionExample-timeline">
+                                          <div class="accordion-item">
+                                             <h2 class="accordion-header" id="headingOne-1">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                   data-bs-target="#collapseOne-1" aria-expanded="true" aria-controls="collapseOne-1">
+                                                Profile
+                                                </button>
+                                             </h2>
+                                             <div id="collapseOne-1" class="accordion-collapse collapse show" aria-labelledby="headingOne-1"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body accordion-body-timeline">
+                                                   <div class="my-profile">
+                                                      <div class="pro-img banner-card-profile-img">
+                                                         <img src="assets/image/7.jpg" alt="">
+                                                      </div>
+                                                      <div class="pro-text ms-3 mt-3">
+                                                         <h6 class="p-0">My page</h6>
+                                                         <p class="m-0">massage</p>
+                                                         <p>Notification</p>
+                                                      </div>
+                                                   </div>
+                                                   <div class="text-center">
+                                                      <button type="button" class="btn btn-primary like-btn">Likes</button>
+                                                      <button type="button" class="btn btn-view">View</button>
+                                                   </div>
+                                                   <div class="like-icon text-center d-flex justify-content-center">
+                                                      <i class="bi bi-heart-fill heart-icon"></i>
+                                                      <h4>466</h4>
+                                                   </div>
+                                                   <p class="text-center">35 New Likes This Week</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="timeline-banner my-3 ">
+                                          <img src="assets/image/timeline-3.png" class="img-fluid" alt="">
+                                       </div>
+                                       <!-- =======================time-line second accordion-mutual-friend feed============================================= -->
+                                       <section>
+                                          <div class="accordion" id="accordionExample-timeline">
+                                             <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingtwo-2">
+                                                   <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                                      data-bs-target="#collapsetwo-2" aria-expanded="true" aria-controls="collapsetwo-2">
+                                                      <h5>Mutual Friends</h5>
+                                                   </button>
+                                                </h2>
+                                                <div id="collapsetwo-2" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                                                   data-bs-parent="#accordionExample">
+                                                   <div class="accordion-body">
+                                                      <div class="mutual-friend-data">
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="m-0">My page</h6>
+                                                               <p class="m-0">massage@gmail.com</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="m-0">My page</h6>
+                                                               <p class="m-0">massage@gmail.com</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="m-0">My page</h6>
+                                                               <p class="m-0">massage@gmail.com</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="m-0">My page</h6>
+                                                               <p class="m-0">massage@gmail.com</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="m-0">My page</h6>
+                                                               <p class="m-0">massage@gmail.com</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="m-0">My page</h6>
+                                                               <p class="m-0">massage@gmail.com</p>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                       </section>
+                                       <!-- ===========================accordion activity======================================= -->
+                                       <section class="mt-3">
+                                       <div class="accordion" id="accordionExample-timeline">
+                                       <div class="accordion-item">
+                                       <h2 class="accordion-header" id="headingtwo-Activity">
+                                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapsetwo-Activity" aria-expanded="true" aria-controls="collapsetwo-Activity">
+                                       <h5>Activity</h5>
+                                       </button>
+                                       </h2>
+                                       <div id="collapsetwo-Activity" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                                          data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                       <div class="mutual-friend-data">
+                                       <div class="my-profile mutual-friend-img">
+                                       <div class="pro-img banner-card-profile-img">
+                                       <img src="assets/image/7.jpg" alt="">
+                                       </div>
+                                       <div class="pro-text ms-3 mt-3">
+                                       <h6 class="m-0">My page</h6>
+                                       <p class="m-0">massage@gmail.com</p>
+                                       </div>
+                                       </div>
+                                       <div class="my-profile mutual-friend-img">
+                                       <div class="pro-img banner-card-profile-img">
+                                       <img src="assets/image/7.jpg" alt="">
+                                       </div>
+                                       <div class="pro-text ms-3 mt-3">
+                                       <h6 class="m-0">My page</h6>
+                                       <p class="m-0">massage@gmail.com</p>
+                                       </div>
+                                       </div>
+                                       <div class="my-profile mutual-friend-img">
+                                       <div class="pro-img banner-card-profile-img">
+                                       <img src="assets/image/7.jpg" alt="">
+                                       </div>
+                                       <div class="pro-text ms-3 mt-3">
+                                       <h6 class="m-0">My page</h6>
+                                       <p class="m-0">massage@gmail.com</p>
+                                       </div>
+                                       </div>
+                                       <div class="my-profile mutual-friend-img">
+                                       <div class="pro-img banner-card-profile-img">
+                                       <img src="assets/image/7.jpg" alt="">
+                                       </div>
+                                       <div class="pro-text ms-3 mt-3">
+                                       <h6 class="m-0">My page</h6>
+                                       <p class="m-0">massage@gmail.com</p>
+                                       </div>
+                                       </div>
+                                       <div class="my-profile mutual-friend-img">
+                                       <div class="pro-img banner-card-profile-img">
+                                       <img src="assets/image/7.jpg" alt="">
+                                       </div>
+                                       <div class="pro-text ms-3 mt-3">
+                                       <h6 class="m-0">My page</h6>
+                                       <p class="m-0">massage@gmail.com</p>
+                                       </div>
+                                       </div>
+                                       <div class="my-profile mutual-friend-img">
+                                       <div class="pro-img banner-card-profile-img">
+                                       <img src="assets/image/7.jpg" alt="">
+                                       </div>
+                                       <div class="pro-text ms-3 mt-3">
+                                       <h6 class="m-0">My page</h6>
+                                       <p class="m-0">massage@gmail.com</p>
+                                       </div>
+                                       </div>
+                                       </div>
+                                       </div>
+                                       </div>
+                                       </div>
+                                       </section>
+                                       </div>
+                                       <div class="col-lg-6">
+
+
+                                       <div class="  about-middle-item bg-light border border-5">
+                                          <h4>Pepole You May Know</h4>
+                                       <div class=" middle-about-img mt-3 ">
+
+                                          <div class="d-flex flex-column text-center mx-2">
+                                       <div>
+                                       <img src="assets/image/timeline-3.png" alt="">
+                                       </div>
+                                       <div class="">
+                                       <h6 class="my-1 ">Jason Borne
+                                       </h6>
+                                       <button class="btn btn-primary add-frnd">Add Friend</button>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex flex-column text-center  mx-2">
+                                       <div>
+                                       <img src="assets/image/timeline-3.png" alt="">
+                                       </div>
+                                       <div class="">
+                                       <h6 class="my-1 ">Jason Borne
+                                       </h6>
+                                       <button class="btn btn-primary add-frnd">Add Friend</button>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex flex-column text-center  mx-2">
+                                       <div>
+                                       <img src="assets/image/timeline-3.png" alt="">
+                                       </div>
+                                       <div class="">
+                                       <h6 class="my-1 ">Jason Borne
+                                       </h6>
+                                       <button class="btn btn-primary add-frnd">Add Friend</button>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex flex-column text-center  mx-2">
+                                       <div>
+                                       <img src="assets/image/timeline-3.png" alt="">
+                                       </div>
+                                       <div class="">
+                                       <h6 class="my-1 ">Jason Borne
+                                       </h6>
+                                       <button class="btn btn-primary add-frnd">Add Friend</button>
+                                       </div>
+                                    </div>
+                                       </div>
+                                       </div>
+
+
+                                       <div class="timeline-middle-item bg-light border border-5">
+                                          <div class="container">
+                                             <h4 class="my-4">Hobbies And Interests</h4>
+                                             <div class="row">
+                                               <div class="col">
+                                                  <div>
+                                                <h6><b>Hobbies:</b> </h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam culpa quisquam recusandae. Voluptatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                             </div>
+                                             <div>
+                                                <h6><b>Favourite TV Shows:
+                                                </b> </h6>
+                                                <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                             </div>
+                                             <div>
+                                                <h6><b>Favourite Movies:
+                                                </b> </h6>
+                                                <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                             </div>
+                                             <div>
+                                                <h6><b>Favourite Games:
+                                                </b> </h6>
+                                                <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                             </div>
+                                             
+                                               </div>
+                                               <div class="col">
+                                                <div>
+                                                   <h6><b>Favourite Games:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                                </div>
+                                                <div>
+                                                   <h6><b>Favourite Games:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                                </div>
+                                                <div>
+                                                   <h6><b>Favourite Games:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                                </div>
+                                                <div>
+                                                   <h6><b>Favourite Games:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                                </div>
+                                               </div>
+                                            
+                                             </div>
+                                           </div>
+                                          
+                                          </div>
+
+                                       <div class="timeline-middle-item bg-light border border-5">
+                                          <div class="container">
+                                             <h4 class="my-4">Education And Employement</h4>
+                                             <div class="row">
+                                               <div class="col">
+                                                  <div>
+                                                <h6><b>Hobbies:</b> </h6>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam culpa quisquam recusandae. Voluptatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                             </div>
+                                             <div>
+                                                <h6><b>Favourite TV Shows:
+                                                </b> </h6>
+                                                <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                             </div>
+                                             <div>
+                                                <h6><b>Favourite Movies:
+                                                </b> </h6>
+                                                <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                             </div>
+                                             <div>
+                                                <h6><b>Favourite Games:
+                                                </b> </h6>
+                                                <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                             </div>
+                                             
+                                               </div>
+                                               <div class="col">
+                                                <div>
+                                                   <h6><b>Favourite Games:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                                </div>
+                                                <div>
+                                                   <h6><b>Favourite Games:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                                </div>
+                                                <div>
+                                                   <h6><b>Favourite Games:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                                </div>
+                                                <div>
+                                                   <h6><b>Favourite Games:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                                </div>
+                                               </div>
+                                            
+                                             </div>
+                                           </div>
+                                          
+                                          </div>
+
+
+                                       <div class="  about-middle-item bg-light border border-5">
+                                          <h4>Viewed Your Profile</h4>
+                                       <div class=" middle-about-img mt-3 ">
+
+                                          <div class="d-flex flex-column text-center mx-2">
+                                       <div>
+                                       <img src="assets/image/timeline-3.png" alt="">
+                                       </div>
+                                       <div class="">
+                                       <h6 class="my-1 ">Jason Borne
+                                       </h6>
+                                       <button class="btn btn-primary add-frnd">Add Friend</button>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex flex-column text-center  mx-2">
+                                       <div>
+                                       <img src="assets/image/timeline-3.png" alt="">
+                                       </div>
+                                       <div class="">
+                                       <h6 class="my-1 ">Jason Borne
+                                       </h6>
+                                       <button class="btn btn-primary add-frnd">Add Friend</button>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex flex-column text-center  mx-2">
+                                       <div>
+                                       <img src="assets/image/timeline-3.png" alt="">
+                                       </div>
+                                       <div class="">
+                                       <h6 class="my-1 ">Jason Borne
+                                       </h6>
+                                       <button class="btn btn-primary add-frnd">Add Friend</button>
+                                       </div>
+                                    </div>
+                                    <div class="d-flex flex-column text-center  mx-2">
+                                       <div>
+                                       <img src="assets/image/timeline-3.png" alt="">
+                                       </div>
+                                       <div class="">
+                                       <h6 class="my-1 ">Jason Borne
+                                       </h6>
+                                       <button class="btn btn-primary add-frnd">Add Friend</button>
+                                       </div>
+                                    </div>
+                                       </div>
+                                       </div>
+                                       <div class="timeline-middle-item bg-light border border-5">
+                                          <div class="container">
+                                             <h4 class="my-4">Activity Log</h4>
+                                             <div class="">
+                                               <div class="col">
+                                                  <div>
+                                                <h6><b>Today:</b> </h6>
+                                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates quaerat optio ex magnam veritatis accusamus inventore sint velit necessitatibus quae. consectetur adipisicing elit. Quibusdam culpa quisquam recusandae. Voluptatibus officiis dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                             </div>
+                                             <div>
+                                                <h6><b>25 December:
+                                                </b> </h6>
+                                                <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ratione incidunt dicta veniam sunt magnam eos asperiores repellat quia temporibus. .</p>
+                                             </div>
+                                             <div>
+                                                <h6><b>25 December 28:
+                                                </b> </h6>
+                                                <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam necessitatibus molestiae nostrum mollitia, natus amet laudantium ut. Rem, praesentium blanditiis. reprehenderit.</p>
+                                             </div>
+                                             <div>
+                                                <h6><b>june 24:
+                                                </b> </h6>
+                                                <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, reprehenderit Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae velit vitae iusto quasi odit suscipit, culpa eos odio accusantium..</p>
+                                             </div>
+                                             
+                                               </div>
+                                               <div class="col">
+                                                <div>
+                                                   <h6><b>march 24:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat adipisci exercitationem vel vitae dolorum perferendis sapiente neque dicta veniam temporibus? reprehenderit.</p>
+                                                </div>
+                                                <div>
+                                                   <h6><b>march 30:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officii Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, recusandae nulla. Voluptate autem amet porro, minima ut totam mollitia ex. s dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                                </div>
+                                                <div>
+                                                   <h6><b>15 December:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat temporibus fugit illum quam, nulla eaque. dicta natus error facilis. Deleniti, reprehenderit.</p>
+                                                </div>
+                                                <div>
+                                                   <h6><b>1 December:
+                                                   </b> </h6>
+                                                   <p>Lorem ipsumatibus officiis dicta natus error facilis. Deleniti, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt delectus modi debitis porro nostrum dolorum. reprehenderit.</p>
+                                                </div>
+                                               </div>
+                                            
+                                             </div>
+                                           </div>
+                                          
+                                          </div>
+                                          
+                                       </div>
+                                       <div class="col-lg-3">
+            
+                                            <!-- ===========================accordion profile-info======================================= -->
+            <section>
+                                       <div class="accordion" id="accordionExample-profile-info">
+                                       <div class="accordion-item">
+                                       <h2 class="accordion-header" id="headingOne-profile-info">
+                                       <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseOne-profile-info" aria-expanded="true" aria-controls="collapseOne-profile-info">
+                                       Profile info
+                                       </button>
+                                       </h2>
+                                       <div id="collapseOne-profile-info" class="accordion-collapse collapse show" aria-labelledby="headingOne-1"
+                                          data-bs-parent="#accordionExample">
+                                       <div class="accordion-body accordion-body-timeline accordion-body-timeline-info">
+                                       <div class="my-profile my-profile-info">
+                                     
+                                       <div class="pro-text ms-3 mt-3">
+                                       <h6 class="p-0 fw-bold">About me</h6>
+                                       <p>Lorem ipsum dolor sit amet consecteturaut mol Lorem ipsum dolor sit amet consectetur adipisicing elit. architecto.</p>
+                                       </div>
+                                       <div class="pro-text ms-3">
+                                          <h6 class="p-0 fw-bold">About me</h6>
+                                          <p>Lorem ipsum dolor sit amet consecteturaut mol Lorem ipsum dolor sit amet consectetur adipisicing elit. architecto.</p>
+                                          </div>
+                                          <div class="pro-text ms-3 ">
+                                             <h6 class="p-0 fw-bold">About me</h6>
+                                             <p>Lorem ipsum dolor sit amet consecteturaut mol Lorem ipsum dolor sit amet consectetur adipisicing elit. architecto.</p>
+                                             </div>
+                                       </div>
+                                       <div class="text-center">
+                                          <button type="button" class="btn btn-facebook"><i class="bi bi-facebook"></i> Facebook</button>
+                                          <button type="button" class="btn btn-twitter"><i class="bi bi-twitter"></i> Twitter</button>
+                                       
+                                          <button type="button" class="btn btn-telegram"><i class="bi bi-telegram"></i> Telegram</button>
+                                       </div>
+                                       
+                                      
+                                       </div>
+                                       </div>
+                                       </div>
+                                       </div>
+                                    </section>
+                    <!-- =========================== profile info follower accordion  ===================================== -->
+            
+             <section class="mt-3">
+                                          <div class="accordion" id="accordionExample-timeline">
+                                             <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingtwo-follower">
+                                                   <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                                      data-bs-target="#collapsetwo-follower" aria-expanded="true" aria-controls="collapsetwo-follower">
+                                                      <h5>Follower</h5>
+                                                   </button>
+                                                </h2>
+                                                <div id="collapsetwo-follower" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                                                   data-bs-parent="#accordionExample">
+                                                   <div class="accordion-body">
+                                                      <div class="mutual-friend-data profile-info-followers">
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="">My page</h6>
+                                                               <p class="m-0">Add Friend</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="">My page</h6>
+                                                               <p class="m-0">Add Friend</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="">My page</h6>
+                                                               <p class="m-0">Add Friend</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="">My page</h6>
+                                                               <p class="m-0">Add Friend</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="">My page</h6>
+                                                               <p class="m-0">Add Friend</p>
+                                                            </div>
+                                                         </div>
+                                                         <div class="my-profile mutual-friend-img">
+                                                            <div class="pro-img banner-card-profile-img">
+                                                               <img src="assets/image/7.jpg" alt="">
+                                                            </div>
+                                                            <div class="pro-text ms-3 mt-3">
+                                                               <h6 class="">My page</h6>
+                                                               <p class="m-0">Add Friend</p>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                       </section>
+            
+                     <!-- =========================== profile info following accordion  ===================================== -->                  
+            
+            
+                     <section class="mt-3">
+                        <div class="accordion" id="accordionExample-timeline">
+                           <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingtwo-following">
+                                 <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsetwo-following" aria-expanded="true" aria-controls="collapsetwo-following">
+                                    <h5>Following</h5>
+                                 </button>
+                              </h2>
+                              <div id="collapsetwo-following" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                                 data-bs-parent="#accordionExample">
+                                 <div class="accordion-body">
+                                    <div class="mutual-friend-data profile-info-followers">
+                                       <div class="my-profile mutual-friend-img">
+                                          <div class="pro-img banner-card-profile-img">
+                                             <img src="assets/image/7.jpg" alt="">
+                                          </div>
+                                          <div class="pro-text ms-3 mt-3">
+                                             <h6 class="">My page</h6>
+                                             <p class="m-0">Add Friend</p>
+                                          </div>
+                                       </div>
+                                       <div class="my-profile mutual-friend-img">
+                                          <div class="pro-img banner-card-profile-img">
+                                             <img src="assets/image/7.jpg" alt="">
+                                          </div>
+                                          <div class="pro-text ms-3 mt-3">
+                                             <h6 class="">My page</h6>
+                                             <p class="m-0">Add Friend</p>
+                                          </div>
+                                       </div>
+                                       <div class="my-profile mutual-friend-img">
+                                          <div class="pro-img banner-card-profile-img">
+                                             <img src="assets/image/7.jpg" alt="">
+                                          </div>
+                                          <div class="pro-text ms-3 mt-3">
+                                             <h6 class="">My page</h6>
+                                             <p class="m-0">Add Friend</p>
+                                          </div>
+                                       </div>
+                                       <div class="my-profile mutual-friend-img">
+                                          <div class="pro-img banner-card-profile-img">
+                                             <img src="assets/image/7.jpg" alt="">
+                                          </div>
+                                          <div class="pro-text ms-3 mt-3">
+                                             <h6 class="">My page</h6>
+                                             <p class="m-0">Add Friend</p>
+                                          </div>
+                                       </div>
+                                       <div class="my-profile mutual-friend-img">
+                                          <div class="pro-img banner-card-profile-img">
+                                             <img src="assets/image/7.jpg" alt="">
+                                          </div>
+                                          <div class="pro-text ms-3 mt-3">
+                                             <h6 class="">My page</h6>
+                                             <p class="m-0">Add Friend</p>
+                                          </div>
+                                       </div>
+                                       <div class="my-profile mutual-friend-img">
+                                          <div class="pro-img banner-card-profile-img">
+                                             <img src="assets/image/7.jpg" alt="">
+                                          </div>
+                                          <div class="pro-text ms-3 mt-3">
+                                             <h6 class="">My page</h6>
+                                             <p class="m-0">Add Friend</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                     </section>
+                        <!-- =========================== profile info latest-photos accordion  ===================================== -->   
+            
+                        <section class="mt-3">
+                           <div class="accordion" id="accordionExample-latest-photos">
+                              <div class="accordion-item">
+                                 <h2 class="accordion-header" id="headingtwo-latest-photos">
+                                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#collapsetwo-latest-photos" aria-expanded="true" aria-controls="collapsetwo-latest-photos">
+                                       <h5>Latest photos</h5>
+                                    </button>
+                                 </h2>
+                                 <div id="collapsetwo-latest-photos" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       <div class="mutual-friend-data profile-info-photos">
+                                          <div class="my-profile mutual-friend-img">
+                                             <div class="container">
+                                                <div class="row">
+                                                  <div class="col-lg-3">
+                                                    <div>
+                                                       <img src="assets/image/timeline-2.png" class="img-fluid" alt="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-lg-3">
+                                                   <div>
+                                                      <img src="assets/image/timeline-1.png" class="img-fluid" alt="">
+                                                   </div>
+                                                 </div>
+                                                 <div class="col-lg-3">
+                                                   <div>
+                                                      <img src="assets/image/timeline-3.png" class="img-fluid" alt="">
+                                                   </div>
+                                                 </div>
+                                                 <div class="col-lg-3">
+                                                   <div>
+                                                      <img src="assets/image/friend-profile.jpg" class="img-fluid" alt="">
+                                                   </div>
+                                                 </div>
+                                          
+                                                
+                                                   <div class="col-lg-3">
+                                                     <div>
+                                                        <img src="assets/image/timeline-2.png" class="img-fluid" alt="">
+                                                     </div>
+                                                   </div>
+                                                   <div class="col-lg-3">
+                                                    <div>
+                                                       <img src="assets/image/timeline-1.png" class="img-fluid" alt="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-lg-3">
+                                                    <div>
+                                                       <img src="assets/image/timeline-3.png" class="img-fluid" alt="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-lg-3">
+                                                    <div>
+                                                       <img src="assets/image/friend-profile.jpg" class="img-fluid" alt="">
+                                                    </div>
+                                                  </div>
+                                                
+                                              </div>
+                                             
+                                          </div>
+                                         
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                        </section>
+                        <!-- =========================== profile-info-friend accordion  ===================================== -->   
+            
+                        <section class="mt-3">
+                           <div class="accordion" id="accordionExample-latest-photos">
+                              <div class="accordion-item">
+                                 <h2 class="accordion-header" id="headingtwo-latest-photos">
+                                    <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                       data-bs-target="#collapsetwo-latest-photos" aria-expanded="true" aria-controls="collapsetwo-latest-photos">
+                                       <h5>Latest photos</h5>
+                                    </button>
+                                 </h2>
+                                 <div id="collapsetwo-latest-photos" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                       <div class="mutual-friend-data profile-info-photos profile-info-friend">
+                                          <div class="my-profile mutual-friend-img">
+                                             <div class="container">
+                                                <div class="row">
+                                                  <div class="col-lg-3">
+                                                    <div>
+                                                       <img src="assets/image/timeline-2.png" class="img-fluid" alt="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-lg-3">
+                                                   <div>
+                                                      <img src="assets/image/timeline-1.png" class="img-fluid" alt="">
+                                                   </div>
+                                                 </div>
+                                                 <div class="col-lg-3">
+                                                   <div>
+                                                      <img src="assets/image/timeline-3.png" class="img-fluid" alt="">
+                                                   </div>
+                                                 </div>
+                                                 <div class="col-lg-3">
+                                                   <div>
+                                                      <img src="assets/image/friend-profile.jpg" class="img-fluid" alt="">
+                                                   </div>
+                                                 </div>
+                                          
+                                                
+                                                   <div class="col-lg-3">
+                                                     <div>
+                                                        <img src="assets/image/timeline-2.png" class="img-fluid" alt="">
+                                                     </div>
+                                                   </div>
+                                                   <div class="col-lg-3">
+                                                    <div>
+                                                       <img src="assets/image/timeline-1.png" class="img-fluid" alt="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-lg-3">
+                                                    <div>
+                                                       <img src="assets/image/timeline-3.png" class="img-fluid" alt="">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-lg-3">
+                                                    <div>
+                                                       <img src="assets/image/friend-profile.jpg" class="img-fluid" alt="">
+                                                    </div>
+                                                  </div>
+                                                
+                                              </div>
+                                             
+                                          </div>
+                                         
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                        </section>
+                        <div class="mt-3">
+                           <img src="assets/image/timeline-4-info.png" class="img-fluid" alt="">
+                        </div>
+            
+            
+                                       </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                        </div>
+
+
+                        <!-- ===============friend tab============================ -->
+                        <div id="Friend" class="container-fluid tab-pane fade">
+                           <br>
+                           <!-- <h3>Friends</h3> -->
+                           <div class="friend">
+                              <div class="container-fluid">
+                                 <div class="row">
+                                    <div class="col-lg-4 rounded-3">
+                                       <div class="friend-tab-grid">
+                                          <div>
+                                             <img src="assets/image/friend-profile.jpg" class="img-fluid" alt="">
+                                          </div>
+                                          <div>
+                                                <div class="text-center friend-tab-card">
+                                                   <div class=" banner-card-profile-img">
+                                                      <img src="assets/image/7.jpg" alt="">
+                                                   </div>
+                                                   <h4 class="fw-bold">Mark Jocno</h4>
+                                                   <p>DESIGNER</p>
+                                                   <div class="social-media">
+                                                      <div class="social-list-icon">
+                                                         <ul class="d-flex justify-content-center">
+                                                            <li><a href="">
+                                                               <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-google" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-wifi" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="container  border-top">
+                                                      <div class="row">
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">follower</p>
+                                                               <h2 class="m-0">575</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">following</p>
+                                                               <h2 class="m-0">375</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">Like</p>
+                                                               <h2 class="m-0">705</h2>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 rounded-3">
+                                       <div class="friend-tab-grid">
+                                          <div>
+                                             <img src="assets/image/fri-bg-4.jpg" class="img-fluid" alt="">
+                                          </div>
+                                          <div>
+                                                <div class="text-center friend-tab-card">
+                                                   <div class=" banner-card-profile-img">
+                                                      <img src="assets/image/pro-1.jpg" alt="">
+                                                   </div>
+                                                   <h4 class="fw-bold">Mark Jocno</h4>
+                                                   <p>DESIGNER</p>
+                                                   <div class="social-media">
+                                                      <div class="social-list-icon">
+                                                         <ul class="d-flex justify-content-center">
+                                                            <li><a href="">
+                                                               <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-google" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-wifi" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="container  border-top">
+                                                      <div class="row">
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">follower</p>
+                                                               <h2 class="m-0">575</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">following</p>
+                                                               <h2 class="m-0">375</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">Like</p>
+                                                               <h2 class="m-0">705</h2>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 rounded-3">
+                                       <div class="friend-tab-grid">
+                                          <div>
+                                             <img src="assets/image/fri-bg-3.jpg" class="img-fluid" alt="">
+                                          </div>
+                                          <div>
+                                                <div class="text-center friend-tab-card">
+                                                   <div class=" banner-card-profile-img">
+                                                      <img src="assets/image/pro-4.jpg" alt="">
+                                                   </div>
+                                                   <h4 class="fw-bold">Mark Jocno</h4>
+                                                   <p>DESIGNER</p>
+                                                   <div class="social-media">
+                                                      <div class="social-list-icon">
+                                                         <ul class="d-flex justify-content-center">
+                                                            <li><a href="">
+                                                               <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-google" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-wifi" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="container  border-top">
+                                                      <div class="row">
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">follower</p>
+                                                               <h2 class="m-0">575</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">following</p>
+                                                               <h2 class="m-0">375</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">Like</p>
+                                                               <h2 class="m-0">705</h2>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 rounded-3">
+                                       <div class="friend-tab-grid">
+                                          <div>
+                                             <img src="assets/image/friend-profile.jpg" class="img-fluid" alt="">
+                                          </div>
+                                          <div>
+                                                <div class="text-center friend-tab-card">
+                                                   <div class=" banner-card-profile-img">
+                                                      <img src="assets/image/7.jpg" alt="">
+                                                   </div>
+                                                   <h4 class="fw-bold">Mark Jocno</h4>
+                                                   <p>DESIGNER</p>
+                                                   <div class="social-media">
+                                                      <div class="social-list-icon">
+                                                         <ul class="d-flex justify-content-center">
+                                                            <li><a href="">
+                                                               <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-google" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-wifi" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="container  border-top">
+                                                      <div class="row">
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">follower</p>
+                                                               <h2 class="m-0">575</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">following</p>
+                                                               <h2 class="m-0">375</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">Like</p>
+                                                               <h2 class="m-0">705</h2>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 rounded-3">
+                                       <div class="friend-tab-grid">
+                                          <div>
+                                             <img src="assets/image/fri-bg-3.jpg" class="img-fluid" alt="">
+                                          </div>
+                                          <div>
+                                                <div class="text-center friend-tab-card">
+                                                   <div class=" banner-card-profile-img">
+                                                      <img src="assets/image/pro-4.jpg" alt="">
+                                                   </div>
+                                                   <h4 class="fw-bold">Mark Jocno</h4>
+                                                   <p>DESIGNER</p>
+                                                   <div class="social-media">
+                                                      <div class="social-list-icon">
+                                                         <ul class="d-flex justify-content-center">
+                                                            <li><a href="">
+                                                               <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-google" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-wifi" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="container  border-top">
+                                                      <div class="row">
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">follower</p>
+                                                               <h2 class="m-0">575</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">following</p>
+                                                               <h2 class="m-0">375</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">Like</p>
+                                                               <h2 class="m-0">705</h2>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4 rounded-3">
+                                       <div class="friend-tab-grid">
+                                          <div>
+                                             <img src="assets/image/fri-bg-4.jpg" class="img-fluid" alt="">
+                                          </div>
+                                          <div>
+                                                <div class="text-center friend-tab-card">
+                                                   <div class=" banner-card-profile-img">
+                                                      <img src="assets/image/pro-1.jpg" alt="">
+                                                   </div>
+                                                   <h4 class="fw-bold">Mark Jocno</h4>
+                                                   <p>DESIGNER</p>
+                                                   <div class="social-media">
+                                                      <div class="social-list-icon">
+                                                         <ul class="d-flex justify-content-center">
+                                                            <li><a href="">
+                                                               <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-google" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                            <li><a href="">
+                                                               <i class="fa fa-wifi" aria-hidden="true"></i>
+                                                               </a>
+                                                            </li>
+                                                         </ul>
+                                                      </div>
+                                                   </div>
+                                                   <div class="container  border-top">
+                                                      <div class="row">
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">follower</p>
+                                                               <h2 class="m-0">575</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col border-end friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">following</p>
+                                                               <h2 class="m-0">375</h2>
+                                                            </div>
+                                                         </div>
+                                                         <div class="col friend-tab-card-item">
+                                                            <div class="bann-pro-text">
+                                                               <p class="mb-0 pt-2">Like</p>
+                                                               <h2 class="m-0">705</h2>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <!-- ===============photos tab============================ -->
+                        <div id="photos" class="container-fluid tab-pane fade">
+                           <br>
+                           <div class="container-fluid">
+                              <div class="row">
+                                 <div class="col-lg-3">
+                                    <div class="card photo-card" >
+                                       <img src="assets/image/timeline-3.png" class="card-img-top" alt="...">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Dev joun</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <div class="card photo-card" >
+                                       <img src="assets/image/timeline-3.png" class="card-img-top" alt="...">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Dev joun</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <div class="card photo-card" >
+                                       <img src="assets/image/timeline-3.png" class="card-img-top" alt="...">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Dev joun</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <div class="card photo-card" >
+                                       <img src="assets/image/timeline-3.png" class="card-img-top" alt="...">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Dev joun</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="container-fluid mt-3">
+                              <div class="row">
+                                 <div class="col-lg-3">
+                                    <div class="card photo-card" >
+                                       <img src="assets/image/timeline-3.png" class="card-img-top" alt="...">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Dev joun</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <div class="card photo-card" >
+                                       <img src="assets/image/timeline-3.png" class="card-img-top" alt="...">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Dev joun</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <div class="card photo-card" >
+                                       <img src="assets/image/timeline-3.png" class="card-img-top" alt="...">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Dev joun</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3">
+                                    <div class="card photo-card" >
+                                       <img src="assets/image/timeline-3.png" class="card-img-top" alt="...">
+                                       <div class="card-body">
+                                          <h5 class="card-title">Dev joun</h5>
+                                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     
+                  
+               
+               <div class="footer bg-dark p-2 mt-3">
+                  <div class="d-flex justify-content-center align-item-center">
+                     <h6 class="text-light">Copyright 2022 © Zeta theme by pixelstrap  </h6>
+                  </div>
+               </div>
+            </div>
+      </section>
+    
+      </div>
+
+      
+      <!-- Optional JavaScript; choose one of the two! -->
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="js/javascript.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+         -->
+   </body>
+</html>
